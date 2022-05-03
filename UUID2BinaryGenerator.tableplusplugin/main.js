@@ -1,8 +1,6 @@
 'use strict';
 
-import { getUUID } from './library/helper';
-
-var onRun = function(context) {
+var onRun = function (context) {
     // Get all the items
     var row = context.clickedRow();
     var col = context.clickedColumn();
@@ -13,8 +11,11 @@ var onRun = function(context) {
         return;
     }
 
-    // Generate UUID
-    let uuid = getUUID();
+    // generate uuid
+    var uuid = "x'" + ('xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+    })) + "'";
     if (uuid == null) {
         context.alert('Error', 'Could not generate UUID');
         return;

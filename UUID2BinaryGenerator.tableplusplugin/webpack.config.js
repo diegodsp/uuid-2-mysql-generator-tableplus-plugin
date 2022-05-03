@@ -5,7 +5,7 @@ const config = {
     entry: './main.js',
     output: {
         path: path.resolve(__dirname, './'),
-        filename: './uuidGenerator.js'
+        filename: './uuid2binaryGenerator.js'
     },
     mode: 'production'
 };

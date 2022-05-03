@@ -1,0 +1,20 @@
+{
+    "name": "UUID2Binary Generator",
+    "identifier": "com.tableplus.TablePlus.UUID2BinaryGenerator",
+    "version": "1.1",
+    "detail": "This plugin helps you generate UUID in binary format",
+    "author": "@diegodsp for TablePlus",
+    "authorEmail": "diegodsp@gmail.com",
+    "scripts": [
+        {
+            "location": "data",
+            "type": "separator"
+        },
+        {
+            "location": "data",
+            "type": "action",
+            "script": "uuid2binaryGenerator.js",
+            "name": "Generate UUID2Binary"
+        }
+    ]
+}
