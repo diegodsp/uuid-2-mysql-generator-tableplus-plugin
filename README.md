@@ -1,6 +1,12 @@
 # What is this
 
-This is a TablePlus Plugin, install OpenURL you will have a menu `Generate UUID2Binary` in context menu.
+This is a TablePlus Plugin, [forked](https://github.com/TablePlus/uuid-generator), install OpenURL you will have a menu `Generate UUID2Binary` in context menu.
+
+Produces something like that...
+```
+x'4EE34C6CC2074668879EFCABADB332DD'
+```
+...to binary(16) columns.
 
 # Support
 
